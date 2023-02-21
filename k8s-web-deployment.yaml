@@ -17,3 +17,12 @@ spec:
           image: ispassov/k8s-springboot-mysql:2.3
           ports:
             - containerPort: 8080
+          env:
+            - name: MYSQL_HOST
+              value: mysql-service
+            - name: MYSQL_USERNAME
+              value: root
+            - name: MYSQL_PASSWORD
+              value: am99e3n8
+            - name: MYSQL_DATABASE
+              value: init_db

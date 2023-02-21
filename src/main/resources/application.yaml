@@ -13,9 +13,9 @@ spring:
         enabled: 'true'
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: am99e3n8
-    username: root
-    url: jdbc:mysql://localhost:3308/reseller?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+    password: ${MYSQL_PASSWORD}
+    username: ${MYSQL_USERNAME}
+    url: jdbc:mysql://${MYSQL_HOST}:3308/${MYSQL_DATABASE}?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
 logging:
   level:
     org:
